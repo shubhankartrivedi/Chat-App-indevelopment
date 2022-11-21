@@ -1,38 +1,96 @@
-.App {
+body {
+
+  background-color: #000;
+
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.253);
+  color: #fff;
+  padding: 10px;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(10px);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.footer {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  background-color: rgba(0, 0, 0, 0.253);
+  position: fixed;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  bottom: 0;
+  /* set the bottom to 0*/
+  right: 0;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.footer input[type="text"] {
+  width: 100%;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer button {}
+
+
+
+
+
+.box{
+  padding-bottom: 30px;
+  background-color: #000;
+}
+
+
+.bubbleWrapper {
+	padding: 10px 10px;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-self: flex-end;
+  color: #fff;
+}
+.inlineContainer {
+  display: inline-flex;
+}
+.inlineContainer.own {
+  flex-direction: row-reverse;
+}
+
+.ownBubble {
+	min-width: 60px;
+	max-width: 700px;
+	padding: 10px 10px 10px 15px;
+  margin: 1px 0px;
+	background-color: #6C8EA4;
+	border-radius: 15px 15px 0px 15px;
+	border: 1px solid #54788e;
+ 
+}
+.otherBubble {
+	min-width: 60px;
+	max-width: 700px;
+	padding: 10px 10px 10px 15px;
+  margin: 1px 0px;
+	background-color: #2496e2;
+	border-radius: 15px 15px 15px 0;
+	border: 1px solid #54788e;
+  
+}
+.own {
+	align-self: flex-end;
+}
+.other {
+	align-self: flex-start;
+}
+span.own,
+span.other{
+  font-size: 14px;
+  color: grey;
+
+}
+
+.room {
+  margin-bottom: 20px;
 }
